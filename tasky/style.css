@@ -1,0 +1,155 @@
+.mdn{
+    height:300px;
+    width:500px;
+    /* border:5px solid salmon; */
+    cursor:pointer;
+    box-shadow: 10px -10px 15px rgb(0, 0, 0);
+
+    
+
+}
+
+.txt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgb(19, 11, 230);
+}
+
+.heading{
+    color: red;
+    
+}
+
+.img{
+    height: 60%;
+    width: 60%;
+
+}
+
+.text{
+    font-style: italic;
+}
+
+.cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.ttxt{
+    color: red;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .centered {
+    position: absolute;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+   
+    position: relative;
+    animation: text 3s 1;
+   
+  }
+
+  .centered {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @keyframes text {
+    0% {
+        text-align: center;
+        color: black;
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+
+a:link{
+    color: rgb(30, 100, 21);
+}
+
+a:visited{
+    color: black;
+}
+
+a:active{
+    color: blue;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+/* .container1 p:first-child{
+    color: red;
+} */
+
+/* .container1 p:nth-child(2) */
+.container1 p:nth-child(even){
+    color: red;
+}
+
+/* can also write 2n+1 or 2n */
+
+p::before{
+    content: "hello";
+    background-color: aquamarine;
+    color: aliceblue;
+    /* display:block; */
+}
+
+p::after{
+    content: "world";
+    background-color: rgb(95, 172, 210);
+    color: aliceblue;
+    display: block;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    background-color: rgb(172, 231, 235);
+    /* transition-property:all;
+   
+    transition-duration:0.5s ; */
+    transition: all 0.5s;
+}
+
+div:hover {
+    width: 250px;
+    height: 250px;
+    border-radius: 50% 15% 15% 50% ;
+    background-color: aquamarine;
+    transform: rotate(180deg);
+
+}
+

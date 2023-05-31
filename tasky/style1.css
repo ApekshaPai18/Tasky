@@ -1,0 +1,68 @@
+.animation{
+    height: 100px;
+    width: 100px;
+   
+    border: 1px solid black;
+    animation: 5s abc infinite;
+    animation-delay: 1s;
+}
+
+@keyframes abc{
+    20%{
+        margin-left: 500px;
+        background-color: rgb(4, 4, 4);
+    }
+    100%{
+        margin-left: 500px;
+        background-color: aquamarine;
+        transform: rotate(270deg);
+    }
+    
+}
+
+.animation1{
+    height: 100px;
+    width: 100px;
+   
+    border: 1px solid black;
+    animation: 5s aaa infinite;
+    animation-delay: 1s;
+}
+
+@keyframes aaa{
+    20%{
+        margin-left: 400px;
+        border-radius: 50%;
+        background-color: rgb(4, 4, 4);
+    }
+    100%{
+        margin-left: 400px;
+        background-color: rgb(158, 192, 240);
+        transform: rotate(90deg);
+    }
+    
+}
+
+.animation2{
+    height: 100px;
+    width: 100px;
+   
+    border: 1px solid black;
+    animation: 5s bbb infinite;
+    animation-delay: 1s;
+}
+
+
+@keyframes bbb{
+    20%{
+        margin-left: 300px;
+        border-radius: 25% 25%;
+        background-color: rgb(4, 4, 4);
+    }
+    100%{
+        margin-left: 300px;
+        background-color: rgb(200, 137, 210);
+        transform: rotate(90deg);
+    }
+    
+}
